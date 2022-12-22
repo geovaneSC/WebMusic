@@ -1,0 +1,144 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;  
+} /*corpo da pagina*/
+body{
+  background-color: black;
+}/*rodape de cima da pagina*/
+header{
+  display: flex;
+  background-color: #f6c733;
+  padding: 20px;
+  height: 100%;
+  width: 97.9%;
+}
+header img{
+  width: 100px;
+  height: 50px;
+}
+header h2{
+  margin-left: 2%;
+}
+ /*titulo no corpo da pagina*/
+.top{
+  margin-top: 5%;
+  color: white;
+ text-align: center;
+} 
+.top p{
+  margin-top: 2%;
+}
+/* video da pagina*/
+.banner img {
+  display: flex;
+  position: absolute;
+  left: 30%;
+  margin-top: 35%;
+  transform: translate(-50%, -50%);
+  width: 90vh;
+  height: 100%;
+}
+/*faixa 1 de musica*/
+.container{
+  display: flex;
+ background-color: #f6c733;
+  width: 500px;
+  height: 150px;
+  box-shadow: 10px 10px 10px rgba(34, 32, 32, 0.938);
+  margin-top: 5%;
+  margin-left: 60%;
+  border-radius: 2%;
+  color: black;
+}
+/*imagem de play*/
+.play img{
+  
+  height: 100px;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+/*proriedade de play*/
+#icon{
+  width: 100px;
+  cursor: pointer;
+}
+/*legenda da musica*/
+.p{
+  font-size: 18px;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+/*rodape de baixo da pagina*/
+footer{
+  background-color: #f6c733;
+  padding: 20px;
+  height: 100%;
+  width: 97.9%;
+  margin-top: 15%;
+  text-decoration: none;
+}
+footer a{
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px){
+  
+  header{
+    display: flex;
+    background-color: #f6c733;
+    padding: 20px;
+    height: 100%;
+    width: 86.9%;
+  }
+  
+  .banner img {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 50%;
+  }
+  .container{
+    display: flex;
+   background-color: #f6c733;
+    width: 250px;
+    height: 150px;
+    box-shadow: 10px 10px 10px rgba(34, 32, 32, 0.938);
+    margin-top: 110%;
+    margin-left: 10%;
+    border-radius: 5%;
+    color: black;
+  }
+  .play img{
+  
+    height: 35px;
+    margin-left: 5%;
+    margin-top: 5%;
+  
+  }
+  /*proriedade de play*/
+  #icon{
+    width: 50px;
+    cursor: pointer;
+  }
+  .p{
+    font-size: 18px;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  footer{
+    background-color: #f6c733;
+    padding: 20px;
+    height: 100%;
+    width:86.9%;
+    margin-top: 15%;
+    text-decoration: none;
+  }
+}
+

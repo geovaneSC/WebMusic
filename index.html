@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <title>WebMusic</title>
+</head>
+<header>
+    <!-- titulo da pagina no rodape de cima -->
+    <img src="music/Private GIF.gif" alt="gif">
+    <h2>WebMusic</h2>
+    
+</header>
+<body>
+    <!-- titulo no corpo da pagina -->
+    <div class="top">
+        <h1>Playlist de RnB</h1>
+        <p>Bem-vindo a Playlist de músicas RnB, para começar click na primeira música da lista</p>
+    </div>
+    <!-- video da pagina -->
+    <div class="banner"> 
+        <img src="music/transferir (3).jpeg" alt="imgPag">
+    </div>
+    <!-- faixa 1 de musica -->
+    <div class="container">
+       
+       <div class="play">
+        <img src="music/transferir (3).png" id="icon">
+    </div>
+    <!-- legenda da musica -->
+        <div class="p">
+            <p>H.E.R - Every Kind Of Way [LEGENDADO]</p>
+        </div>
+    </div>
+
+    <!-- faixa 2 de musica -->
+    <div class="container">
+       
+        <div class="play">
+         <img src="music/transferir (3).png" id="icon1">
+     </div>
+     <!-- legenda da musica -->
+         <div class="p">
+             <p>H.E.R. - Come Through (Official Video) ft. Chris Brown</p>
+         </div>
+     </div>
+    
+      <!-- faixa 3 de musica -->
+    <div class="container">
+       
+        <div class="play">
+         <img src="music/transferir (3).png" id="icon2">
+     </div>
+     <!-- legenda da musica -->
+         <div class="p">
+             <p>Backrubs</p>
+         </div>
+     </div>
+
+       <!-- faixa 4 de musica -->
+    <div class="container">
+       
+        <div class="play">
+         <img src="music/transferir (3).png" id="icon3">
+     </div>
+     <!-- legenda da musica -->
+         <div class="p">
+             <p>Ella Mai - A Mess Ft. Lucky Daye [LEGENDA_TRADUÇÃO]</p>
+         </div>
+     </div>
+     
+        <!-- faixa 5 de musica -->
+    <div class="container">
+       
+        <div class="play">
+         <img src="music/transferir (3).png" id="icon4">
+     </div>
+     <!-- legenda da musica -->
+         <div class="p">
+             <p>Ye Ali & Dcmbr - Backrubs [LEGENDA_TRADUÇÃO]</p>
+         </div>
+     </div>
+     
+    
+    <!-- musica 1 -->
+        <audio id="mySong">
+            <source src="music/H.E.R - Every Kind Of Way [LEGENDADO]" type="audio/mp3">
+        </audio>
+
+         <!-- musica 2 -->
+         <audio id="mySong1">
+            <source src="music/H.E.R. - Come Through (Official Video) ft. Chris Brown" type="audio/mp3">
+        </audio>
+
+         <!-- musica 3 -->
+         <audio id="mySong2">
+            <source src="music/Backrubs" type="audio/mp3">
+        </audio>
+
+          
+    <!-- musica 4 -->
+    <audio id="mySong3">
+        <source src="music/Ella Mai - A Mess Ft. Lucky Daye [LEGENDA_TRADUÇÃO]" type="audio/mp3">
+    </audio>
+
+    <!-- musica 5 -->
+    <audio id="mySong4">
+        <source src="music/Ye Ali & Dcmbr - Backrubs [LEGENDA_TRADUÇÃO]" type="audio/mp3">
+    </audio>
+
+
+    <!-- parte do javascript para ocorrer a pausa e o play da musica, a troca das imagens também -->
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+            var mySong1 = document.getElementById("mySong1");
+            var icon1 = document.getElementById("icon1");
+            var mySong2 = document.getElementById("mySong2");
+            var icon2 = document.getElementById("icon2");
+            var mySong3 = document.getElementById("mySong3");
+            var icon3 = document.getElementById("icon3");
+            var mySong4 = document.getElementById("mySong4");
+            var icon4 = document.getElementById("icon4");
+    
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "music/Botão De Pausa De Vídeo ícones em vetor livre criados por Freepik.png";
+                } else {
+                    mySong.pause();
+                    icon.src = "music/transferir (3).png";
+                }
+                icon1.onclick = function(){
+                if(mySong1.paused){
+                 mySong1.play();
+                 icon1.src = "music/Botão De Pausa De Vídeo ícones em vetor livre criados por Freepik.png";
+                  } else {
+                 mySong1.pause();
+                 icon1.src = "music/transferir (3).png";
+                 }
+             }
+             icon2.onclick = function(){
+                if(mySong2.paused){
+                 mySong2.play();
+                 icon2.src = "music/Botão De Pausa De Vídeo ícones em vetor livre criados por Freepik.png";
+                  } else {
+                 mySong2.pause();
+                 icon2.src = "music/transferir (3).png";
+                 }
+             }
+             icon3.onclick = function(){
+                if(mySong3.paused){
+                    mySong3.play();
+                    icon3.src = "music/Botão De Pausa De Vídeo ícones em vetor livre criados por Freepik.png";
+                } else {
+                    mySong3.pause();
+                    icon3.src = "music/transferir (3).png";
+                }
+            }
+            icon4.onclick = function(){
+                if(mySong4.paused){
+                    mySong4.play();
+                    icon4.src = "music/Botão De Pausa De Vídeo ícones em vetor livre criados por Freepik.png";
+                } else {
+                    mySong4.pause();
+                    icon4.src = "music/transferir (3).png";
+                }
+            }
+        }
+    
+        </script>
+
+
+       <!-- rodape de baixo da pagina -->
+   <footer>
+        <h3>links das músicas:</h3>
+            <li><a href="https://youtu.be/LBkeC5xexmc">H.E.R - Every Kind Of Way [LEGENDADO]</a></li>
+            <li><a href="https://youtu.be/50GjhhyfN_Q">H.E.R. - Come Through (Official Video) ft. Chris Brown</a></li>
+            <li><a href="https://youtu.be/nkHlgZAnpew">Backrubs</a></li>
+            <li><a href="https://youtu.be/dvr2rvUqtv4">Ella Mai - A Mess Ft. Lucky Daye [LEGENDA_TRADUÇÃO]</a></li>
+            <li><a href="https://youtu.be/8nwiy-iOLaM">Ye Ali & Dcmbr - Backrubs [LEGENDA_TRADUÇÃO]</a></li>
+        
+        <h3>link do canal: </h3> 
+            <li><a href="https://www.youtube.com/@RnBTraducoes">RnB Traduções</a></li>
+       
+   </footer> 
+</body>
+</html>
